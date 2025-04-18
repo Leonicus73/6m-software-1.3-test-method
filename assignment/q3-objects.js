@@ -25,6 +25,17 @@ function convert(keyArr, valueArr){
         - Step 3: Within the for-loop, add the key and value to the local scoped object.
         - Step 4: Write a return statement to return the object literal after the for-loop code block.
     */
+   // Step 1: Create a local scoped object literal
+   let localObj = {};
+    
+   // Step 2: Define a for-loop that runs based on keyArr's length
+   for (let i = 0; i < keyArr.length; i++) {
+       // Step 3: Add the key and value to the local scoped object
+       localObj[keyArr[i]] = valueArr[i];
+   }
+   
+   // Step 4: Write a return statement to return the object literal
+   return localObj;
 }
 
 function printByKey(key){
